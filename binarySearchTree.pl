@@ -1,5 +1,5 @@
 /*
-See report for instructions on how to test thank
+See report for instructions on how to test
 */
 
 
