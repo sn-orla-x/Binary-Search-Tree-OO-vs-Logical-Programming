@@ -1,3 +1,9 @@
+/*
+See report for instructions on how to test thank
+*/
+
+
+
 node(_,_,_).
 
 
