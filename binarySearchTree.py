@@ -1,3 +1,7 @@
+"""
+This code us based on code which can be found on toodle.computing.dcu.ie - which helped me to
+impliment the Node class and the beginning of the BST class.
+"""
 class Node:
 	def __init__(self, item, left = None, right = None):
 		self.item = item
