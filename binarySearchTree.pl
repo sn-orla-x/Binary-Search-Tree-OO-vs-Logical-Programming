@@ -1,5 +1,6 @@
 /*
-See report for instructions on how to test
+This code was written using the help of this link: http://www.cs.toronto.edu/~ajuma/326f08/19Prolog4.pdf?fbclid=IwAR1MBd-YXJ1EOMDJAfyeMoav6khVZjHxRrM_unpk1WyuJSNiJJt_Z326Xnw
+This helped me with initialising the BST and Nodes. I also got help from David Early, who talked through his reasoning for inorder.
 */
 
 
