@@ -9,14 +9,14 @@ node(_,_,_).
 
 
 search(node(A,_,_),A) :- !.
-search(node(V,L,_),A) :- A < V, search((L),A).
-search(node(V,_,R),A) :- A > V, search((R),A).
+search(node(V,L,_),A) :- A < V, search((L),A), !.
+search(node(V,_,R),A) :- A > V, search((R),A), !.
 
 insert(node(V, nil, nil),V) :- !.
-insert(node(nil,nil,nil), A) :- node(A, nil, nil).
-insert(nil, A) :- node(A, nil, nil).
-insert(node(V, L, _), A) :- A < V, insert((L),A).
-insert(node(V, _, R), A) :- A > V, insert((R),A).
+insert(node(nil,nil,nil), A) :- node(A, nil, nil),!.
+insert(nil, A) :- node(A, nil, nil),!.
+insert(node(V, L, _), A) :- A < V, insert((L),A),!.
+insert(node(V, _, R), A) :- A > V, insert((R),A),!.
 
 inorder(nil) :- !.
 inorder(node(V,nil, nil)) :- write(V), write(" "),!.
